@@ -51,7 +51,7 @@
     "test-e2e": "NODE_ENV=test HEADLESS=true SLOWMO=true jest",
     "test": "yarn lint && yarn test-node && yarn test-browser",
     "cover": "nyc --reporter=lcov --reporter html npm test",
-    "start": "yarn install-and-start -- examples/demo-app start-local",
+    "start": "export MapboxAccessToken=pk.eyJ1IjoieWFuZ2Jvb20iLCJhIjoiY2xnZHoyc2I1MTJocDNqbno5bjRzbnNpcCJ9.RozxbnYjUfspMbmS1IwL-w && yarn install-and-start -- examples/demo-app start-local",
     "start:deck": "yarn install-and-start -- examples/demo-app start-local-deck",
     "start:deck-src": "yarn install-and-start -- examples/demo-app start-local-deck-src",
     "start:loaders-src": "yarn install-and-start -- examples/demo-app start-local-loaders-src",
